@@ -1,0 +1,25 @@
+<html>
+
+<body>
+<script>
+if('geolocation' in navigator) {
+	navigator.geolocation.getCurrentPosition(function(position) {
+		console.log(position)
+	}, function(error) {
+		console.log(error)
+	})
+	const watcher = navigator.geolocation.watcPosition(function(position) {
+		console.log(position)
+	}, function(error) {
+		console.log(error)
+	}, {enableHighAccuracy: true, maximumAge: 30000, timeout: 30000  })
+	
+	
+} else {
+	alert('error: Endereço não encontrado para essa localidade.')
+}
+
+</script>
+</body>
+
+</html>

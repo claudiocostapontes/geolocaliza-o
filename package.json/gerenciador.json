@@ -1,0 +1,5 @@
+{
+    "clientId": "CLIENT_ID",
+    "password": "REGISTRY_PASSWORD",
+    "includePublic": true
+}
